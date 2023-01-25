@@ -7,6 +7,6 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: https://httpbin.org/get
+        args: https://cat-fact.herokuapp.com/facts/
       
   

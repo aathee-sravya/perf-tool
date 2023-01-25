@@ -1,12 +1,12 @@
 name: commands
-on: [push]
+on: push
 jobs:
-  run-shell-command:
+  curl:
     runs-on: ubuntu-latest
     steps:
-      - name: echo a string
-        run: echo "Hello World"
-      - name: multiline script
-        run: echo "Hello GitHub Action"
+    - name: curl
+      uses: wei/curl@master
+      with:
+        args: https://httpbin.org/get
       
   

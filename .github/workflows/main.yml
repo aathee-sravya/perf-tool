@@ -7,6 +7,6 @@ jobs:
     - name: curl
       uses: wei/curl@master
       with:
-        args: https://cat-fact.herokuapp.com/facts/
+        args: https://openlibrary.org/api/books?bibkeys=ISBN:0201558025,LCCN:93005405&format=json
       
   

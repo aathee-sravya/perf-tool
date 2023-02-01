@@ -8,6 +8,6 @@ jobs:
       id: format_script
       uses: notiz-dev/github-action-json-property@release
       with: 
-        path: 'glossary-resp.json'
+        path: './glossary-resp.json'
         prop_path: 'mutatedEntities'
     - run: echo ${{steps.format_script.outputs.prop}} 

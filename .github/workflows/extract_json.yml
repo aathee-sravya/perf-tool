@@ -1,0 +1,16 @@
+name: Test Json extraction
+on:
+  push:
+    branches: [ "main" ]
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    steps:
+    - name: get nested property
+      id: format_script
+      uses: notiz-dev/github-action-json-property@release
+      with: 
+        path: 'glossary_resp.json'
+        prop_path: 'mutatedEntities'
+    - run: echo ${{steps.format_script.outputs.prop}} 
+

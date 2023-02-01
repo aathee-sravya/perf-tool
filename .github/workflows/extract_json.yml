@@ -1,7 +1,5 @@
 name: Test Json extraction
-on:
-  push:
-    branches: [ "main" ]
+on: push
 jobs:
   deployment:
     runs-on: ubuntu-latest
